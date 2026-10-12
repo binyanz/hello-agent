@@ -1,0 +1,7 @@
+requests
+tavily-python
+openai
+python-dotenv
+transformers
+torch
+google-search-results

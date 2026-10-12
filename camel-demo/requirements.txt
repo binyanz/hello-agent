@@ -1,0 +1,6 @@
+camel-ai==0.2.75
+python-dotenv
+# camel-ai==0.2.75 import 的 FastMCP 位置跟最新 mcp 包（当前2.3.0）不兼容，
+# `from mcp.server import FastMCP` 会报 ImportError，锁定到 2.0.0 之前的版本。
+# 跟 agentscope-demo 踩的是同一类坑。
+mcp==1.29.1

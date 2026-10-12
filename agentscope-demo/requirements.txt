@@ -1,0 +1,11 @@
+agentscope==1.0.2
+dashscope
+pydantic
+python-dotenv
+# agentscope 1.0.2 声明 mcp>=1.13，但 pip 默认会装最新的 mcp（当前2.3.0），
+# 2.x 把 streamablehttp_client 改名成了 streamable_http_client，导致
+# `import agentscope` 直接崩；锁定在 2.0.0 之前的最新版本。
+mcp==1.29.1
+# agentscope.evaluate 内部 import tqdm，但没有声明在它自己的依赖里。
+tqdm
+ollama
